@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Section_7.Entry_Editor">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Keyboard="Numeric" Placeholder="phone"/>
+            <Entry IsPassword="True"/>
+            <Editor Placeholder="comments" AutoSize="TextChanges"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

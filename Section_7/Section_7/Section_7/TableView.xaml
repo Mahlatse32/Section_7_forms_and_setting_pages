@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Section_7"
+             x:Class="Section_7.TableView">
+    <ContentPage.Content>
+        <TableView Intent="Form">
+            <TableRoot>
+                <TableSection Title="Basics">
+                    <TextCell Text="Name" Detail="Hlatse Tshehla" />
+                    <EntryCell Label="Title" Placeholder="(eg Shopping)"/>
+                    <SwitchCell Text="Nofification" On="True"/>
+                    <local:DateCell Label="Start"/>
+                    <local:DateCell Label="End"/>
+                    <ViewCell Tapped="ViewCell_Tapped">
+                        <StackLayout Orientation="Horizontal" Padding="13, 5">
+                            <Label Text="Contact Method" VerticalOptions="Center" />
+                            <Label 
+							x:Name="contactMethod"
+							VerticalOptions="Center" 
+							HorizontalOptions="EndAndExpand" 
+							Text="None" 
+							TextColor="Gray" />
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>
